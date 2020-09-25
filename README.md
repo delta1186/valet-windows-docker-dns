@@ -1,10 +1,12 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-valet.svg"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/cretueusebiu/valet-windows"><img src="https://travis-ci.org/cretueusebiu/valet-windows.svg?branch=master" alt="Build Status"></a>
-<a href="https://packagist.org/packages/cretueusebiu/valet-windows"><img src="https://poser.pugx.org/cretueusebiu/valet-windows/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/cretueusebiu/valet-windows"><img src="https://poser.pugx.org/cretueusebiu/valet-windows/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/cretueusebiu/valet-windows"><img src="https://poser.pugx.org/cretueusebiu/valet-windows/license.svg" alt="License"></a>
+<a href="https://travis-ci.org/delta1186/valet-windows-docker-dns"><img src="https://travis-ci.org/delta1186/valet-windows-docker-dns.svg?branch=master" alt="Build Status"></a>
+<!--
+<a href="https://packagist.org/packageg/delta1186/valet-windows-docker-dns"><img src="https://poser.pugx.org/delta1186/valet-windows-docker-dns/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packageg/delta1186/valet-windows-docker-dns"><img src="https://poser.pugx.org/delta1186/valet-windows-docker-dns/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packageg/delta1186/valet-windows-docker-dns"><img src="https://poser.pugx.org/delta1186/valet-windows-docker-dns/license.svg" alt="License"></a>
+-->
 </p>
 
 <p align="center">Windows port of the popular development environment <a href="https://github.com/laravel/valet">Laravel Valet</a>.</p>
@@ -17,23 +19,23 @@ Laravel Valet configures your Windows to always run Nginx in the background when
 
 ## Documentation
 
-Before installation, make sure that no other programs such as Apache or Nginx are binding to your local machine's port 80. <br> Also make sure to open your preferred terminal (CMD, Git Bash, PowerShell, etc.) as Administrator. 
+Before installation, make sure that no other programs such as Apache or Nginx are binding to your local machine's port 80. <br> Also make sure to open your preferred terminal (CMD, Git Bash, PowerShell, etc.) as Administrator.
 
-- If you don't have PHP installed, open PowerShell (3.0+) as Administrator and run: 
+- If you don't have PHP installed, open PowerShell (3.0+) as Administrator and run:
 
 ```bash
 # PHP 7.4
-Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://github.com/cretueusebiu/valet-windows/raw/master/bin/php74.ps1" -OutFile $env:temp\php74.ps1; .$env:temp\php74.ps1
+Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://github.com/delta1186/valet-windows/raw/master/bin/php74.ps1" -OutFile $env:temp\php74.ps1; .$env:temp\php74.ps1
 
 # PHP 7.3
-Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://github.com/cretueusebiu/valet-windows/raw/master/bin/php73.ps1" -OutFile $env:temp\php73.ps1; .$env:temp\php73.ps1
+Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://github.com/delta1186/valet-windows/raw/master/bin/php73.ps1" -OutFile $env:temp\php73.ps1; .$env:temp\php73.ps1
 ```
 
 > This script will download and install PHP for you and add it to your environment path variable. PowerShell is only required for this step.
 
 - If you don't have Composer installed, make sure to [install](https://getcomposer.org/Composer-Setup.exe) it.
 
-- Install Valet with Composer via `composer global require cretueusebiu/valet-windows`.
+- Install Valet with Composer via `composer global require delta1186/valet-windows-docker-dns`.
 
 - Run the `valet install` command. This will configure and install Valet and register Valet's daemon to launch when your system starts.
 
