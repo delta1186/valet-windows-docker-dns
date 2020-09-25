@@ -34,7 +34,7 @@ Container::setInstance(new Container());
 
 $version = '2.1.4';
 
-$app = new Application('Laravel Valet for Windows', $version);
+$app = new Application('Laravel Valet for Windows using Docker DNS', $version);
 
 /*
  * Prune missing directories and symbolic links on every command.
