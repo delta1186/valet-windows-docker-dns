@@ -1,7 +1,7 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-valet.svg"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/delta1186/valet-windows-docker-dns"><img src="https://travis-ci.org/delta1186/valet-windows-docker-dns.svg?branch=master" alt="Build Status"></a>
+<a href="https://travis-ci.com/delta1186/valet-windows-docker-dns"><img src="https://travis-ci.com/delta1186/valet-windows-docker-dns.svg?branch=master" alt="Build Status"></a>
 <!--
 <a href="https://packagist.org/packageg/delta1186/valet-windows-docker-dns"><img src="https://poser.pugx.org/delta1186/valet-windows-docker-dns/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packageg/delta1186/valet-windows-docker-dns"><img src="https://poser.pugx.org/delta1186/valet-windows-docker-dns/v/stable.svg" alt="Latest Stable Version"></a>
