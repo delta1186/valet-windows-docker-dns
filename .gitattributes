@@ -6,3 +6,6 @@
 .gitignore export-ignore
 .travis.yml export-ignore
 phpunit.xml export-ignore
+
+/bin/acrylic/* linguist-vendored
+/bin/nginx/* linguist-vendored
