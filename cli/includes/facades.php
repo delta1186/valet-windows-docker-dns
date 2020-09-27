@@ -57,6 +57,3 @@ class Valet extends Facade
 class WinSW extends Facade
 {
 }
-class Acrylic extends Facade
-{
-}

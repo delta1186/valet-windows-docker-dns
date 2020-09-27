@@ -15,7 +15,7 @@
 
 Valet is a Laravel development environment for Windows. No Vagrant, no `/etc/hosts` file. You can even share your sites publicly using local tunnels. _Yeah, we like it too._
 
-Laravel Valet configures your Windows to always run Nginx in the background when your machine starts. Then, using [Acrylic DNS](http://mayakron.altervista.org/wikibase/show.php?id=AcrylicHome), Valet proxies all requests on the `*.test` domain to point to sites installed on your local machine.
+Laravel Valet configures your Windows to always run Nginx in the background when your machine starts. Then, using [Docker DNS](https://hub.docker.com/repository/docker/hickskp/docker-dns), Valet proxies all requests on the `*.test` domain to point to sites installed on your local machine.
 
 ## Documentation
 
@@ -38,8 +38,6 @@ Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProt
 - Install Valet with Composer via `composer global require delta1186/valet-windows-docker-dns`.
 
 - Run the `valet install` command. This will configure and install Valet and register Valet's daemon to launch when your system starts.
-
-- If you're installing on Windows 10, you may need to [manually configure](http://mayakron.altervista.org/wikibase/show.php?id=AcrylicWindows10Configuration) Windows to use the Acrylic DNS proxy.
 
 Valet will automatically start its daemon each time your machine boots. There is no need to run `valet start` or `valet install` ever again once the initial Valet installation is complete.
 

@@ -58,7 +58,6 @@ if (is_dir(VALET_HOME_PATH)) {
 $app->command('install', function () {
     Nginx::stop();
     PhpFpm::stop();
-    Acrylic::stop();
 
     Configuration::install();
 
@@ -66,7 +65,6 @@ $app->command('install', function () {
     PhpFpm::install();
 
     $tld = Configuration::read()['tld'];
-    Acrylic::install($tld);
 
     Nginx::restart();
 
@@ -83,8 +81,6 @@ $app->command('tld [tld]', function ($tld = null) {
 
     $oldTld = Configuration::read()['tld'];
     $tld = trim($tld, '.');
-
-    Acrylic::updateTld($tld);
 
     Configuration::updateKey('tld', $tld);
 
@@ -233,8 +229,6 @@ $app->command('start', function () {
 
     Nginx::restart();
 
-    Acrylic::restart();
-
     info('Valet services have been started.');
 })->descriptions('Start the Valet services');
 
@@ -245,8 +239,6 @@ $app->command('restart', function () {
     PhpFpm::restart();
 
     Nginx::restart();
-
-    Acrylic::restart();
 
     info('Valet services have been restarted.');
 })->descriptions('Restart the Valet services');
@@ -259,8 +251,6 @@ $app->command('stop', function () {
 
     Nginx::stop();
 
-    Acrylic::stop();
-
     info('Valet services have been stopped.');
 })->descriptions('Stop the Valet services');
 
@@ -271,8 +261,6 @@ $app->command('uninstall', function () {
     Nginx::uninstall();
 
     PhpFpm::uninstall();
-
-    Acrylic::uninstall();
 
     info('Valet has been uninstalled.');
 })->descriptions('Uninstall the Valet services');
